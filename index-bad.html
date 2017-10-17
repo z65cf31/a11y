@@ -22,13 +22,15 @@
   <button type="button" class="btn btn-annot btn-annot-meta" data-toggle="modal" data-target="#annotModal02">02</button>
 
   <div class="site-header">
-    <button type="button" class="btn btn-annot btn-annot-skip" data-toggle="modal" data-target="#annotModal03">03</button>
+    <div class="skip-links">
+      <a href="#main-menu">Skip to Main menu</a>
+      <a href="#main-content">Skip to Main Content area</a>
+      <button type="button" class="btn btn-annot btn-annot-skip" data-toggle="modal" data-target="#annotModal03">03</button>
+    </div>
 
     <div class="bg-faded pt-2">
-
       <div class="container">
         <div class="row">
-
           <div class="col-md-6">
             <div class="pipe-links">
               <ul class="list-inline m-0">
@@ -514,28 +516,28 @@
               <h4 class="heading-s">HTML Failure</h4>
               
 <pre class="highlight">
-<code class="html">
-<div id="header">
-  <div id="logo">...</div>
-  <div id="navigation">
-    <ul>
-      <li>Payments</li>
-      <li>Savings</li>
-      <li>Mortgages</li>
-    </ul>
-    <div id="search">...<input type="text" />...</div>
-  </div>
-</div>
-<div id="main-content">
-  <h1>ING</h1>
-  ...
-</div>
-<div id="complementary-content"> ... </div>
-<div id="footer">
-  <p>ING 2017</p>
-  <ul> ... </ul>
-</div>     
-</code>
+  <code class="html">
+    <div id="header" role="banner">
+      <div id="logo">...</div>
+      <div id="navigation">
+        <ul>
+          <li>Payments</li>
+          <li>Savings</li>
+          <li>Mortgages</li>
+        </ul>
+        <div id="search" role="search">...<input type="text" />...</div>
+      </div>
+    </div>
+    <div id="main-content" role="main">
+      <h1>ING</h1>
+      ...
+    </div>
+    <div id="complementary-content"> ... </div>
+    <div id="footer" role="contentinfo">
+      <p>ING 2017</p>
+      <ul> ... </ul>
+    </div>
+  </code>
 </pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
