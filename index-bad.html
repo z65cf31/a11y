@@ -355,9 +355,9 @@
               <h4 class="heading-s">HTML Failure</h4>
               
 <pre class="highlight">
-<code class="html">
-<title>Bad Demonstration</title>
-</code>
+  <code class="html">
+    <title>Bad Demonstration</title>
+  </code>
 </pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
@@ -494,15 +494,15 @@
       </div>
 
       <div class="modal fade modal-annot" id="annotModal04" tabindex="-1" role="dialog" aria-labelledby="annotModal04Heading">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
+        <footer class="modal-dialog modal-lg" role="document">
+          <main class="modal-content">
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal04Heading">04. No Landmarks or sectioning elements used</h3>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <header class="modal-body">
               <p>Not using ARIA landmark roles or HTML5 sectioning elements to describe document structure and outline different parts of the page, such as navigation, main content and footer info.</p>
               
               <p>For more information refer to the W3C <a href="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/HTML5.html">HTML5 Sectioning Elements: ARIA Landmarks Example</a>.</p>
@@ -517,26 +517,26 @@
               
 <pre class="highlight">
   <code class="html">
-    <div id="header" role="banner">
+    <header role="banner">
       <div id="logo">...</div>
-      <div id="navigation">
+      <nav role="navigation">
         <ul>
           <li>Payments</li>
           <li>Savings</li>
           <li>Mortgages</li>
         </ul>
         <div id="search" role="search">...<input type="text" />...</div>
-      </div>
-    </div>
-    <div id="main-content" role="main">
+      </nav>
+    </header>
+    <main role="main">
       <h1>ING</h1>
       ...
-    </div>
-    <div id="complementary-content"> ... </div>
-    <div id="footer" role="contentinfo">
+    </main>
+    <aside id="complementary-content"> ... </aside>
+    <footer role="contentinfo">
       <p>ING 2017</p>
       <ul> ... </ul>
-    </div>
+    </footer>
   </code>
 </pre>
 
@@ -577,7 +577,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       <div class="text-right">
         <a href="#totop">To Top</a>
