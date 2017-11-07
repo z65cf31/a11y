@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1>
   <!-- title was een beetje kort -->
   <title>Inaccessible Home Page</title>
@@ -14,14 +13,13 @@
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
 </head>
 
 <body class="body bad" id="totop">
   <button type="button" class="btn btn-annot btn-annot-title" data-toggle="modal" data-target="#annotModal01">01</button>
   <button type="button" class="btn btn-annot btn-annot-meta" data-toggle="modal" data-target="#annotModal02">02</button>
 
-  <div class="site-header">
+  <header class="site-header btn-annot-outline" role="banner">
     <div class="skip-links">
       <a href="#main-menu">Skip to Main menu</a>
       <a href="#main-content">Skip to Main Content area</a>
@@ -52,10 +50,8 @@
             </div>
             <button class="btn btn-secondary btn-sm" id="annotations01">Annotations</button>
           </div>
-
         </div>
       </div>
-
     </div>
 
     <div class="navbar navbar-toggleable-md navbar-light">
@@ -71,7 +67,6 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
           <div class="mr-auto">
             <div class="navbar-nav">
               <div class="nav-item active">
@@ -97,7 +92,7 @@
             </div>
           </div>
 
-          <div class="form-inline my-2 my-lg-0 btn-annot-outline">
+          <div class="form-inline my-2 my-lg-0 btn-annot-outline" role="search">
             <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
             <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" placeholder="Type term...">
             <button type="button" class="btn btn-annot btn-annot-search" data-toggle="modal" data-target="#annotModal07">07</button>
@@ -105,16 +100,14 @@
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/icon-search.png">
             </button>
           </div>
-
         </div>
-
       </div>
     </div>
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-kitesurf"></div>
       <div class="container">
-        <div class="brandbar-header">          
+        <header class="brandbar-header">
           <div class="brandbar-heading">
             <span class="d-block annot-relative">
               <span class="brandbar-title btn-annot-outline">Inaccessible Home Page</span>
@@ -127,22 +120,18 @@
               </a>
             </span>
           </div>        
-        </div>
+        </header>
       </div>
     </div>
+  </header>
 
-  </div>
-
-  <div class="btn-annot-outline" id="main-content">
-
+  <main class="btn-annot-outline" id="main-content">
     <div class="full-cover btn-annot-outline bg-faded">
       <div class="container btn-annot-outline">
         <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
 
         <div class="row">
-
           <div class="col-md-6 col-lg-4">
-            
             <div class="card mb-4">
               <div class="annot-relative btn-annot-outline">
                 <img class="card-img-top img-fluid border-grey-light" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/getting-started.png">
@@ -175,11 +164,9 @@
                 </p>
               </div>
             </div>
-            
           </div>
 
           <div class="col-md-6 col-lg-4">
-            
             <div class="card mb-4">
               <div class="card-block">
                 <div class="annot-relative">
@@ -229,11 +216,9 @@
                 </div>
               </div>
             </div>
-            
           </div>
 
           <div class="col-md-6 col-lg-4">
-            
             <div class="card mb-4">
               <img class="card-img-top img-fluid btn-annot-outline" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/experts.jpg" alt="image">
               <button type="button" class="btn btn-annot btn-annot-image" data-toggle="modal" data-target="#annotModal10">10</button>
@@ -269,15 +254,11 @@
                 </p>
               </div>
             </div>
-            
           </div>
-
         </div>
-
       </div>
     </div>
-    
-  </div>
+  </main>
   
   <div class="full-cover btn-annot-outline site-footer bg-grey">
     <div class="container btn-annot-outline text-center">
@@ -303,7 +284,6 @@
         </div>
         <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal14">14</button>
       </div>
-      
     </div>
     <div class="footer-copyright py-2">
       <p class="m-0">&copy; 2017 Copyright</p>
@@ -331,7 +311,6 @@
 
   <section class="full-cover bg-faded annotations" role="region" aria-labelledby="annotationsSection">
     <div class="container">
-
       <h2 class="full-cover-title" id="annotationsSection">Annotations</h2>
 
       <div class="modal fade modal-annot" id="annotModal01" tabindex="-1" role="dialog" aria-labelledby="annotModal01Heading">
