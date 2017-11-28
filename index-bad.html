@@ -55,7 +55,7 @@
     </div>
 
     <div class="navbar navbar-toggleable-md navbar-light">
-      <div class="container btn-annot-outline">
+      <nav class="container btn-annot-outline" role="navigation" aria-labelledby="main-nav">
         <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
         
         <a href="index.html" class="navbar-brand">
@@ -101,7 +101,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <div class="brandbar brandbar-a">
@@ -745,13 +745,17 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
               <h4 class="heading-s">HTML Failure</h4>
 
               <pre class="highlight">
-<code class="html">
-<input type="text" placeholder="Type term...">
-<button type="submit">
-  <img src="../icon-search.png">
-</button>
-</code>
-</pre>
+                <code class="html">
+                  <form role="search">
+                    <label for="search">Search</label>
+                    <input id="search" type="text">
+                    <button type="submit">
+                      <img alt="" src="../icon-search.png">
+                    </button>
+                  </form>
+                </code>
+              </pre>
+
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
